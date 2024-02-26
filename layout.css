@@ -456,7 +456,15 @@ footer {
 @media only screen and (max-width:768px) and (min-width: 481px) {
 
     a.logo {
-        margin-left: 24px;
+        margin-left: 16px;
+    }
+
+    .logo-img {
+        width: 120px;
+    }
+
+    .hamburger {
+        margin-right: 24px;
     }
 
     .navbar-area {
@@ -562,7 +570,15 @@ footer {
 @media only screen and (max-width:480px) {
 
     a.logo {
-        margin-left: 24px;
+        margin-left: 8px;
+    }
+
+    .logo-img {
+        width: 100px;
+    }
+
+    .hamburger {
+        margin-right: 16px;
     }
 
     .navbar-area {

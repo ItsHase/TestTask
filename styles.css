@@ -245,6 +245,18 @@ footer {
     font-size: 32px;
 }
 
+.conf {
+    color: #FFFFFF;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.tech-sup {
+    color: #FFFFFF;
+    font-size: 24px;
+    text-decoration: none;
+}
+
 @keyframes rotateTopBar {
     from {
         transform: rotate(0);
@@ -382,13 +394,17 @@ footer {
     }
 
     .search-link {
-        font-size: 14px;
+        font-size: 16px;
         text-align: center;
     }
 
     .search-btn {
         height: 24px;
         font-size: 12px;
+    }
+
+    .cards-title {
+        font-size: 28px;
     }
 
     .card-name {
@@ -403,4 +419,12 @@ footer {
         font-size: 18px;
     }
 
+}
+
+@media only screen and (max-width:320px) {
+
+    .search-link {
+        font-size: 14px;
+        text-align: center;
+    }
 }
