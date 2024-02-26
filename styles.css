@@ -1,0 +1,406 @@
+.navigation {
+    background-color: #000072;
+}
+
+.link {
+    color: #FFFFFF;
+    font-size: 24px;
+    text-decoration: none;
+    transition: border-bottom 200ms;
+    border-bottom: 0px solid transparent;
+
+}
+
+.active-navbar-link {
+    color: #69C642;
+    border-bottom: 1px solid #69C642;
+}
+
+.link:hover {
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.hamburger-bar-top,
+.hamburger-bar-middle,
+.hamburger-bar-down {
+    background-color: #fff;
+    border-radius: 15px;
+
+
+}
+
+.hamburger-bar-top-animation {
+    animation: rotateTopBar 0.2s forwards;
+}
+
+.hamburger-bar-middle-animation {
+    animation: fadeMiddleBar 0.2s forwards;
+}
+
+.hamburger-bar-down-animation {
+    animation: rotateDownBar 0.2s forwards;
+}
+
+
+.reg-btn {
+    background-color: #69C642;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+header .reg-btn:hover {
+    opacity: 0.8;
+}
+
+.mission-container .reg-btn:hover {
+    transform: scale(1.05);
+}
+
+.auth-btn {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    font-size: 24px;
+    transition: color 0.2s, border-bottom 0.2s;
+}
+
+.auth-btn:hover {
+    color: #69C642;
+    border-bottom: 1px solid #69C642;
+}
+
+.mobile-nav-bar {
+    background-color: #000072;
+    transition: transform 0.3s;
+}
+
+.mobile-link {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: 0.2s;
+}
+
+.mobile-auth-btn {
+    color: #FFFFFF;
+    font-size: 18px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 8px 24px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.mobile-reg-btn {
+    color: #FFFFFF;
+    background-color: #69C642;
+    font-size: 18px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 8px 24px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.mobile-link:hover {
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.mobile-auth-btn:hover {
+    transform: scale(1.05);
+}
+
+.mobile-reg-btn:hover {
+    transform: scale(1.05);
+}
+
+.mobile-nav-drawer {
+    transform: translateX(-200px);
+}
+
+.mission-title {
+    font-size: 64px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.mission-text {
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+
+}
+
+.mission-container .reg-btn {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.search {
+    border: 3px solid #EEEAE6;
+    border-radius: 15px;
+}
+
+.search-link {
+    color: #000;
+    font-size: 28px;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+    transition: color 0.2s, border-bottom 0.2s;
+}
+
+.search-link:hover {
+    color: #69C642;
+    border-bottom: 2px solid #69C642;
+}
+
+.search-input-container {
+    border: 2px solid #000;
+    border-radius: 114px;
+}
+
+.search-input {
+    border: none;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.search-input-container:focus-within {
+    outline: none;
+}
+
+.search-input::-webkit-search-cancel-button {
+    display: none;
+}
+
+.search-btn {
+    border: none;
+    border-left: 2px solid #000;
+    border-radius: 114px;
+    background-color: #69C642;
+    color: #ffffff;
+    font-size: 24px;
+    transition: opacity 0.2s;
+
+}
+
+.search-btn:hover {
+    opacity: 0.9;
+}
+
+.cards-title {
+    font-size: 36px;
+    color: #0D0D33;
+}
+
+.card {
+    border-radius: 15px;
+    background-color: #EEEAE6;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card:hover {
+    background-color: #69C642;
+
+    .card-name,
+    .card-num {
+        color: #FFFFFF;
+    }
+
+    ;
+
+    .card-img {
+        filter: invert(100%) sepia(100%) saturate(498%) hue-rotate(207deg) brightness(108%) contrast(107%);
+    }
+}
+
+.card-num {
+    font-size: 20px;
+    transition: color 0.2s;
+}
+
+.card-img {
+    transition: filter 0.2s;
+}
+
+.card-name {
+    font-size: 18px;
+    transition: color 0.2s;
+}
+
+footer {
+    background-color: #000072;
+}
+
+.miigaik {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 32px;
+}
+
+@keyframes rotateTopBar {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(45deg) translate(4px, 13px);
+    }
+}
+
+@keyframes rotateDownBar {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(-45deg) translate(4px, -13px);
+    }
+}
+
+@keyframes fadeMiddleBar {
+    from {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+
+
+}
+
+@media only screen and (max-width: 1439px) and (min-width: 1200px) {
+
+    .navbar-area .link {
+        font-size: 22px;
+    }
+
+    .auth-area .auth-btn,
+    .reg-btn {
+        font-size: 22px;
+    }
+
+    .mission-title {
+        font-size: 52px;
+    }
+
+    .mission-text {
+        font-size: 18px;
+    }
+
+    .search-link {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 1199px) and (min-width:1024px) {
+
+    .navbar-area .link {
+        font-size: 20px;
+    }
+
+    .auth-area .auth-btn,
+    .reg-btn {
+        font-size: 20px;
+    }
+
+    .search-link {
+        font-size: 24px;
+    }
+
+    .search-btn {
+        height: 38px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:1023px) and (min-width: 769px) {
+
+    .search-link {
+        font-size: 20px;
+    }
+
+    .search-btn {
+        height: 32px;
+        font-size: 18px;
+    }
+
+    .conf {
+        font-size: 20px;
+    }
+
+    .tech-sup {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+
+    .mission-title {
+        font-size: 48px;
+    }
+
+    .mission-text {
+        font-size: 18px;
+    }
+
+    .search-btn {
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .search-link {
+        font-size: 22px;
+        text-align: center;
+    }
+
+
+    .card-name {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+
+    .mission-title {
+        font-size: 46px;
+    }
+
+    .mission-text {
+        font-size: 14px;
+    }
+
+    .search-link {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .search-btn {
+        height: 24px;
+        font-size: 12px;
+    }
+
+    .card-name {
+        font-size: 18px;
+    }
+
+    .conf {
+        font-size: 18px;
+    }
+
+    .tech-sup {
+        font-size: 18px;
+    }
+
+}

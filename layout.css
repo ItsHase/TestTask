@@ -1,0 +1,678 @@
+*,
+:after,
+:before {
+    /* box-sizing: border-box; */
+    font-family: 'Inter';
+}
+
+body {
+    margin: 0;
+    width: 100%;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+header.navigation {
+    height: 100px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a.logo {
+    padding: 1rem;
+    margin-left: 44px;
+    display: block;
+    height: fit-content;
+    width: fit-content;
+}
+
+
+.navbar-area {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    margin-right: 32px;
+
+}
+
+.hamburger-bar-top,
+.hamburger-bar-middle,
+.hamburger-bar-down {
+    height: 4px;
+    width: 36px;
+    margin: 4px;
+
+
+}
+
+
+.auth-area {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin-right: 60px;
+}
+
+.reg-btn {
+    min-width: 200px;
+    height: 40px;
+
+}
+
+.mobile-nav-bar {
+    width: 200px;
+    padding-top: 100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    position: fixed;
+    right: -200px;
+    top: 0;
+    z-index: 1;
+}
+
+.mobile-auth-area {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    padding: 40px 0;
+}
+
+
+.hero {
+    background-image: url("assets/herobackground.png");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 85px;
+
+}
+
+.mission-container {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.mission-title {
+    margin-top: 50px;
+    margin-bottom: 0;
+    width: 580px;
+    height: 154px;
+}
+
+.mission-text {
+    width: 695px;
+    height: 130px;
+    margin: 0;
+}
+
+.mission-container .reg-btn {
+    width: 300px;
+    height: 50px;
+    margin: 0 0 100px 0;
+}
+
+.hero-img {
+    width: 600px;
+}
+
+.search {
+    /* min-width: 1320px; */
+    height: 250px;
+    margin: 60px 60px 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.search-link-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 138px;
+}
+
+.search-input-container {
+    display: flex;
+    justify-content: space-between;
+    min-width: 87%;
+    margin-bottom: 50px;
+
+}
+
+.search-input {
+    flex-grow: 2;
+    padding: 0;
+    margin: 10px;
+}
+
+
+
+.search-btn {
+    width: 135px;
+    height: 50px;
+    padding: 0;
+
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.cards-title {
+    margin-top: 0;
+    margin-bottom: 56px;
+    text-align: center;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 50px;
+    row-gap: 50px;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.card {
+    width: 248px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.card>* {
+    display: block;
+}
+
+.card-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.card-num {
+    text-align: right;
+    margin-right: 24px;
+    margin-top: 16px;
+
+}
+
+.card-img {
+    width: 60px;
+    height: 60px;
+    margin-left: 23px;
+    margin-top: 1px;
+
+}
+
+.card-name {
+    margin-top: 22px;
+    margin-left: 24px;
+    width: 186px;
+}
+
+.large {
+    width: 100px;
+}
+
+footer {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.miigaik {
+    width: 162px;
+    margin-left: 60px;
+    margin-right: auto;
+
+}
+
+.conf {
+    width: 260px;
+}
+
+.tech-sup {
+    margin-right: 60px;
+    width: 180px;
+    margin-left: 151px;
+}
+
+@media only screen and (max-width: 1439px) and (min-width: 1200px) {
+
+
+
+    .navbar-area {
+        gap: 20px;
+    }
+
+    .auth-area {
+        gap: 20px;
+    }
+
+    .auth-area .reg-btn {
+        min-width: 160px;
+    }
+
+    .hero {
+        gap: 50px;
+    }
+
+    .mission-title {
+        width: 500px;
+    }
+
+    .mission-text {
+        width: 500px;
+    }
+
+    .search-link-container {
+        gap: 86px;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 1199px) and (min-width:1024px) {
+
+    a.logo {
+        margin-left: 16px;
+    }
+
+
+    .navbar-area {
+        gap: 16px;
+    }
+
+    .auth-area {
+        margin-right: 32px;
+        gap: 16px;
+    }
+
+    .auth-area .reg-btn {
+        min-width: 140px;
+    }
+
+
+    .hero-img {
+        display: none;
+
+    }
+
+    .mission-title {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mission-text {
+        text-align: center;
+    }
+
+    .mission-container .reg-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .search {
+        height: 220px;
+    }
+
+    .search-link-container {
+        gap: 78px;
+    }
+
+
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    .tech-sup {
+        margin-left: 100px;
+    }
+}
+
+@media only screen and (max-width:1023px) and (min-width: 769px) {
+
+    a.logo {
+        margin-left: 24px;
+    }
+
+    .navbar-area {
+        display: none;
+    }
+
+    .auth-area {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hero-img {
+        display: none;
+
+    }
+
+    .mission-title {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mission-text {
+        text-align: center;
+    }
+
+    .mission-container .reg-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .search {
+        height: 200px;
+    }
+
+    .search-link-container {
+        gap: 40px;
+    }
+
+    .search-input {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .miigaik {
+        width: 162px;
+        margin-left: 48px;
+        margin-right: auto;
+
+    }
+
+    .conf {
+        width: 220px;
+    }
+
+    .tech-sup {
+        margin-right: 48px;
+        width: 160px;
+        margin-left: 56px;
+    }
+
+
+}
+
+@media only screen and (max-width:768px) and (min-width: 481px) {
+
+    a.logo {
+        margin-left: 24px;
+    }
+
+    .navbar-area {
+        display: none;
+    }
+
+    .auth-area {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hero-img {
+        display: none;
+
+    }
+
+    .mission-title {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 460px;
+    }
+
+    .mission-text {
+        text-align: center;
+        width: 480px;
+    }
+
+    .mission-container .reg-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .search {
+        height: 200px;
+    }
+
+    .search-link-container {
+        gap: 20px;
+        flex-direction: column;
+        margin-top: 32px;
+    }
+
+    .search-input-container {
+        margin-bottom: 32px;
+    }
+
+    .search-input {
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+
+    .search-btn {
+        width: 86px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 36px;
+        row-gap: 36px;
+    }
+
+    .card {
+        width: 200px;
+    }
+
+    .card-name {
+        width: 160px;
+    }
+
+    .card-img {
+        width: 52px;
+    }
+
+    .large {
+        width: 86px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .miigaik {
+        margin-top: 32px;
+    }
+
+    .conf {
+        margin: 0px auto 0px 60px;
+    }
+
+    .tech-sup {
+        margin: 0px auto 32px 60px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+
+    a.logo {
+        margin-left: 24px;
+    }
+
+    .navbar-area {
+        display: none;
+    }
+
+    .auth-area {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+
+    .hero-img {
+        display: none;
+
+    }
+
+    .mission-title {
+        text-align: center;
+        margin-left: 16px;
+        margin-right: 16px;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .mission-text {
+        text-align: center;
+        width: fit-content;
+        height: fit-content;
+        margin-left: 16px;
+        margin-right: 16px;
+
+    }
+
+    .mission-container .reg-btn {
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+    }
+
+    .search {
+        height: 200px;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    .search-link-container {
+        gap: 16px;
+        flex-direction: column;
+        margin-top: 24px;
+    }
+
+    .search-input-container {
+        margin-bottom: 48px;
+    }
+
+    .search-input {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        width: 100px;
+    }
+
+    .search-btn {
+        width: 56px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 36px;
+        row-gap: 36px;
+    }
+
+    .card {
+        width: 240px;
+    }
+
+    .card-name {
+        width: 180px;
+    }
+
+    .card-img {
+        width: 60px;
+    }
+
+    .large {
+        width: 100px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .miigaik {
+        margin-top: 32px;
+        margin-left: 48px;
+    }
+
+    .conf {
+        margin: 0px auto 0px 48px;
+        width: 200px;
+    }
+
+    .tech-sup {
+        margin: 0px auto 32px 48px;
+    }
+}

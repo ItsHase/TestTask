@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -15,17 +16,33 @@
     <header class="navigation">
         <a href="#" class="logo"><img class="logo-img" src="assets/Framelogo.svg"></a>
         <nav class="navbar-area">
-            <a href="#" class="navbar-link" class="active">Главная</a>
-            <a href="#" class="navbar-link">Данные</a>
-            <a href="#" class="navbar-link">О проекте</a>
-            <a href="#" class="navbar-link">О нас</a>
-            <a href="#" class="navbar-link">Обратная связь</a>
+            <a href="#" class="link active-navbar-link">Главная</a>
+            <a href="#" class="link">Данные</a>
+            <a href="#" class="link">О проекте</a>
+            <a href="#" class="link">О нас</a>
+            <a href="#" class="link">Обратная связь</a>
         </nav>
+        <div class="hamburger">
+            <div class="hamburger-bar-top"></div>
+            <div class="hamburger-bar-middle"></div>
+            <div class="hamburger-bar-down"></div>
+        </div>
         <div class="auth-area">
             <button class="auth-btn">Вход</button>
             <button class="reg-btn">Регистрация</button>
         </div>
     </header>
+    <nav class="mobile-nav-bar">
+        <div class="mobile-auth-area">
+            <a href='#' class="mobile-auth-btn">Вход</a>
+            <a href='#' class="mobile-reg-btn">Регистрация</a>
+        </div>
+        <a href="#" class="mobile-link active-mobile-link">Главная</a>
+        <a href="#" class="mobile-link">Данные</a>
+        <a href="#" class="mobile-link">О проекте</a>
+        <a href="#" class="mobile-link">О нас</a>
+        <a href="#" class="mobile-link">Обратная связь</a>
+    </nav>
     <main>
         <section class="hero">
             <div class="mission-container">
@@ -40,12 +57,12 @@
                 </p>
                 <button id="hero-btn" class="reg-btn">Регистрация</button>
             </div>
-            <img src="assets/Groupnavigator.svg" alt="">
+            <img src="assets/Groupnavigator.svg" class="hero-img">
         </section>
         <section class="search">
-            <div class="search-links-container">
-                <a href="#" class="search-links">Поиск по ключевым словам</a>
-                <a href="#" class="search-links">Открыть классификатор</a>
+            <div class="search-link-container">
+                <a href="#" class="search-link">Поиск по ключевым словам</a>
+                <a href="#" class="search-link">Открыть классификатор</a>
             </div>
             <div class="search-input-container">
                 <input type="search" class="search-input">
@@ -56,96 +73,115 @@
             <h1 class="cards-title">Каталоги данных</h1>
             <div class="card-container">
                 <div class="card">
+                    <a href="#" class="card-link"></a>
                     <span class="card-num">45</span>
                     <img src="assets/cards/gerb.svg" class="card-img">
                     <span class="card-name">Государство</span>
                 </div>
                 <div class="card">
+                    <a href="#" class="card-link"></a>
                     <span class="card-num">32</span>
                     <img src="assets/cards/infosphere.svg" class="card-img">
                     <span class="card-name">Инфосфера</span>
                 </div>
                 <div class="card">
+                    <a href="#" class="card-link"></a>
                     <span class="card-num">20</span>
                     <img src="assets/cards/transport.svg" class="card-img">
                     <span class="card-name">Транспорт</span>
                 </div>
                 <div class="card">
+                    <a href="#" class="card-link"></a>
                     <span class="card-num">55</span>
                     <img src="assets/cards/economics.svg" class="card-img">
                     <span class="card-name">Экономика</span>
                 </div>
                 <div class="card">
+                    <a href="#" class="card-link"></a>
                     <span class="card-num">67</span>
                     <img src="assets/cards/Building.svg" class="card-img">
                     <span class="card-name">ЖКХ</span>
                 </div>
                 <div class="card">
+                    <a href="#" class="card-link"></a>
                     <span class="card-num">55</span>
                     <img src="assets/cards/Security.svg" class="card-img">
                     <span class="card-name">Охрана порядка и защита населения</span>
                 </div>
                 <div class="card">
+                    <a href="#" class="card-link"></a>
                     <span class="card-num">31</span>
                     <img src="assets/cards/Social.svg" class="card-img">
                     <span class="card-name">Социальная среда</span>
                 </div>
                 <div class="card">
+                    <a href="#" class="card-link"></a>
                     <span class="card-num">78</span>
-                    <img src="assets/cards/culture.svg" id="culture-card-img" class="card-img">
+                    <img src="assets/cards/culture.svg" class="card-img large">
                     <span class="card-name">Культура</span>
                 </div>
                 <div class="card">
+                    <a href="#" class="card-link"></a>
                     <span class="card-num">46</span>
                     <img src="assets/cards/education.svg" class="card-img">
                     <span class="card-name">Образование</span>
                 </div>
                 <div class="card">
+                    <a href="#" class="card-link"></a>
                     <span class="card-num">3</span>
-                    <img src="assets/cards/state border.svg" id="state-border-img" class="card-img">
+                    <img src="assets/cards/state border.svg" class="card-img large">
                     <span class="card-name">Административно-территориальное деление</span>
                 </div>
                 <div class="card">
+                    <a href="#" class="card-link"></a>
                     <span class="card-num">7</span>
                     <img src="assets/cards/construction.svg" class="card-img">
                     <span class="card-name">Строительство и землеустройство</span>
                 </div>
                 <div class="card">
+                    <a href="#" class="card-link"></a>
                     <span class="card-num">36</span>
                     <img src="assets/cards/health.svg" class="card-img">
                     <span class="card-name">Здравоохранение</span>
                 </div>
                 <div class="card">
+                    <a href="#" class="card-link"></a>
                     <span class="card-num">54</span>
-                    <img src="assets/cards/plants.svg" id="plant-card-img" class="card-img">
+                    <img src="assets/cards/plants.svg" class="card-img large">
                     <span class="card-name">Экология и сельское хозяйство</span>
                 </div>
                 <div class="card">
+                    <a href="#" class="card-link"></a>
                     <span class="card-num">43</span>
-                    <img src="assets/cards/trees.svg" id="trees-card-img" class="card-img">
+                    <img src="assets/cards/trees.svg" class="card-img large">
                     <span class="card-name">Лесные ресурсы</span>
                 </div>
                 <div class="card">
+                    <a href="#" class="card-link"></a>
                     <span class="card-num">28</span>
                     <img src="assets/cards/water.svg" class="card-img">
                     <span class="card-name">Водные ресурсы</span>
                 </div>
                 <div class="card">
+                    <a href="#" class="card-link"></a>
                     <span class="card-num">21</span>
                     <img src="assets/cards/sport.svg" class="card-img">
                     <span class="card-name">Спорт и физическая культура</span>
                 </div>
                 <div class="card">
+                    <a href="#" class="card-link"></a>
                     <span class="card-num">32</span>
                     <img src="assets/cards/science.svg" class="card-img">
                     <span class="card-name">Наука</span>
                 </div>
                 <div class="card">
+                    <a href="#" class="card-link"></a>
                     <span class="card-num">47</span>
                     <img src="assets/cards/industry.svg" class="card-img">
                     <span class="card-name">Промышленность</span>
                 </div>
                 <div class="card">
+                    <a href="#" class="card-link"></a>
                     <span class="card-num">31</span>
                     <img src="assets/cards/tourism.svg" class="card-img">
                     <span class="card-name">Досуг и туризм</span>
@@ -156,9 +192,10 @@
     </main>
     <footer>
         <a href="#" class="miigaik">МИИГАиК</a>
-        <a href="#" class="conf">Политика Конфиденциальности</a>
-        <a href="#" class="tech-sup">Контакты Тех.поддержка</a>
+        <a href="#" class="link conf">Политика Конфиденциальности</a>
+        <a href="#" class="link tech-sup">Контакты Тех.поддержка</a>
     </footer>
+    <script src="hamburger.js"></script>
 </body>
 
 </html>
